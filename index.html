@@ -253,14 +253,15 @@
                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalCenterTitle">Form Pendaftaran Reseller</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <form action="https://formspree.io/mqkkvjyg" method="POST"> 
+
+                            <form action="https://formspree.io/mqkkvjyg" method="POST">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Form Pendaftaran Reseller</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
                                     <div class="form-group">
                                         <label for="namaLengkap">Nama Reseller</label>
                                         <input type="text" class="form-control" id="nameInput" name="nama">
@@ -287,8 +288,6 @@
                                         <input type="text" class="form-control" id="nameInput" name="domisili">
                                     </div>
 
-
-
                                     <div class="form-group">
                                         <label for="namaLengkap">Media Berjualan</label>
                                         <div class="form-check form-check">
@@ -313,16 +312,12 @@
                                         </div>
                                     </div>
 
-
-
-
-
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Daftar</button>
-                            </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <input type="submit" class="btn btn-primary" value="Daftar" />
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
