@@ -11,12 +11,12 @@
 
 <body>
     <header>
-        <nav class="header-nav">
+        <nav class="header-nav" id="top">
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-sm-5 ">
                         <div id="contact-us">
-                            <a href="callus">Hubungi Kami</a>
+                            <a href="#tokoKami">Hubungi Kami</a>
                         </div>
                     </div>
 
@@ -431,35 +431,42 @@
                     <p class="dropnav right"><a href="a">Semua produk terbaru ></a></p>
                 </div>
 
-                <button class="open-button" onclick="openForm()" id='chat-btn'>
-                    <i class="fas fa-comment-alt" style="margin-right: 5px;"></i>Chat
-                </button>
-
-                <div class="chat-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <h1>Chat</h1>
-
-                        <label for="msg"><b>Pesan</b></label>
-                        <textarea placeholder="Tulis Pesan..." name="msg" required></textarea>
-
-                        <button type="submit" class="btn btn-secondary">Kirim</button>
-                        <button type="button" class="btn btn-warning" onclick="closeForm()">Tutup</button>
-                    </form>
-                </div>
-
-                <script>
-                    function openForm() {
-                        document.getElementById("myForm").style.display = "block";
-                        document.getElementById('chat-btn').style.display = "none";
-                    }
-
-                    function closeForm() {
-                        document.getElementById("myForm").style.display = "none";
-                        document.getElementById('chat-btn').style.display = "block";
-                    }
-                </script>
-
     </section>
+    <div>
+        <button class="open-button" onclick="openForm()" id='chat-btn'>
+            <i class="fas fa-comment-alt" style="margin-right: 5px;"></i>Chat dengan kami
+        </button>
+
+        <div class="open-button2">
+            <a href="#top"><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+        </button>
+
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+
+                <label for="msg"><b>Pesan</b></label>
+                <textarea placeholder="Tulis Pesan..." name="msg" required></textarea>
+
+                <button type="submit" class="btn btn-secondary">Kirim</button>
+                <button type="button" class="btn btn-warning" onclick="closeForm()">Tutup</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById('chat-btn').style.display = "none";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById('chat-btn').style.display = "block";
+        }
+    </script>
 
 
     <footer>
@@ -483,7 +490,7 @@
                     </ul>
                 </div>
 
-                <div class='col'>
+                <div class='col' id="tokoKami">
                     <h6>TOKO KAMI</h6>
                     <p>Perumahan GMP Blok B no 56
                         <br>Duriangkang - Sungai Beduk
