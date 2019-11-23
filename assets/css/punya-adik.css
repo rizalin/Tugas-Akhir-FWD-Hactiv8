@@ -78,7 +78,7 @@ a:visited {
   
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card-deck p {
@@ -135,7 +135,7 @@ ul {
   height: 70px;
 }
 
-/* Dropdown Button */
+
 .dropnav {
   padding: 16px;
   font-size: 18px;
@@ -156,3 +156,62 @@ ul {
   text-align: right;
   font-weight: 600;
 }
+
+.open-button {
+  background-color: #555;
+  color: white;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container {
+  background-color:gray;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
